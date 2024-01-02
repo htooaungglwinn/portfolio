@@ -3,6 +3,16 @@ import ProjectData from "./projectdata/projectData.js";
 gsap.registerPlugin(Flip, ScrollTrigger);
 
 window.addEventListener("load", () => {
+  const lenis = new Lenis({
+    lerp: 0.07,
+  });
+
+  function raf(time) {
+    lenis.raf(time);
+    requestAnimationFrame(raf);
+  }
+
+  requestAnimationFrame(raf);
   // Declaring Variables
   let state = null;
 

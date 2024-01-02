@@ -1,3 +1,6 @@
+@import url("https://fonts.cdnfonts.com/css/coolvetica-2");
+@import url("https://fonts.cdnfonts.com/css/switzer");
+
 /* Variables */
 :root {
   /* Design Variables */
@@ -46,8 +49,6 @@
 }
 
 /* Utalities */
-@import url("https://fonts.cdnfonts.com/css/coolvetica-2");
-@import url("https://fonts.cdnfonts.com/css/switzer");
 
 .mt_200 {
   margin-top: 200px;
