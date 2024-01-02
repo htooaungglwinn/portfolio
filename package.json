@@ -1,11 +1,12 @@
 {
   "dependencies": {
-    "gsap": "^3.12.4"
+    "@studio-freight/lenis": "^1.0.33",
+    "gsap": "^3.12.4",
+    "lenis": "^0.0.2"
   },
   "name": "gsap",
   "version": "1.0.0",
   "main": "index.js",
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
