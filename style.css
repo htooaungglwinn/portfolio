@@ -1,6 +1,197 @@
 @import "/src/styles/variables.css";
 @import "/src/styles/_utalities.css";
 
+/* Variables */
+:root {
+  /* Design Variables */
+  --test-color: red;
+
+  /* Color - neutrals */
+  --color-white-0: #ffffff;
+  --color-black-400: #171717;
+
+  /* Color - grey-scale */
+  --color-grey-015: rgba(0, 0, 0, 0.15);
+  --color-grey-08: rgba(0, 0, 0, 0.8);
+  --color-grey-20: #fbfbfb;
+  --color-grey-30: #f1f1f1;
+  --color-grey-50: #eeeeee;
+  --color-grey-100: #bebebe;
+  --color-grey-300: #aaaaaa;
+  --color-grey-400: #676767;
+
+  /* Color - utalities */
+  --color-violet-400: rgb(117, 24, 204);
+  --color-slateblue-400: #283c4d;
+
+  /* --------------------- */
+  /* --- DESIGN TOKENS --- */
+  /* --------------------- */
+  /* BACKGROUNDS */
+  --bg-color-light: var(--color-grey-30);
+
+  /* Colors - Utalities */
+  --color-highlight: var(--color-violet-400);
+
+  /* TEXT */
+  --text-color-dark: var(--color-black-400);
+  --text-color-light: var(--color-grey-20);
+
+  /* Footer Section */
+  --footer-bg-color: var(--color-grey-50);
+  --footer-divider-line: var(--color-grey-015);
+
+  /* PROJECT SECTION */
+  --project-divider-line: var(--color-grey-015);
+  --project-footer-line: var(--color-grey-015);
+  --project-cta-border: var(--color-black-400);
+  --cta-color-hover: var(--color-violet-400);
+}
+
+/* Utalities */
+@import url("https://fonts.cdnfonts.com/css/coolvetica-2");
+@import url("https://fonts.cdnfonts.com/css/switzer");
+
+.mt_200 {
+  margin-top: 200px;
+}
+
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg-color-white);
+  background-color: var(--bg-color-light);
+  color: var(--text-color-dark);
+}
+
+body a {
+  text-decoration: none;
+}
+
+body p {
+  font-family: "Switzer";
+  font-weight: 300;
+  font-size: 1.1rem;
+  letter-spacing: 0.2px;
+  line-height: 130%;
+}
+
+/* lenis styles */
+
+html.lenis {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-scrolling iframe {
+  pointer-events: none;
+}
+
+/* utalities */
+
+[data-hidden] {
+  opacity: 0;
+}
+
+[data-animation="text-reveal"] {
+  display: block;
+  overflow: hidden;
+
+  > * {
+    display: block;
+    line-height: 1;
+    transform: translateY(100%);
+  }
+}
+
+[data-animation="gif-reveal"] {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 10rem;
+  transform-origin: center;
+  opacity: 0;
+}
+
+/* utalities */
+.container {
+  width: 84vw;
+  margin: 0 auto;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.highlight {
+  position: relative;
+  display: inline-block;
+}
+
+.highlight:before,
+.highlight:after {
+  content: "";
+  position: absolute;
+  bottom: -15%; /* Adjust for desired distance below text */
+  left: 0;
+  width: 100%;
+  height: 75%;
+  background-color: rgba(137, 43, 226, 0.17);
+  z-index: -1;
+}
+
+.highlight_color {
+  color: var(--color-highlight);
+}
+
+.bold_md {
+  font-weight: 500;
+}
+
+.underline {
+  text-decoration: underline;
+  padding: 4px 0px;
+}
+
+.shadow_rg {
+  box-shadow: 6px 8px 12px 0px #12121230;
+}
+
+.border_grey {
+  border: 1.5px solid grey;
+}
+
+.flex_col {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.two_col {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+/* End of Utalities */
+
 /* Fonts */
 /* @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap"); */
 /* @import url("https://fonts.cdnfonts.com/css/coolvetica-2");
