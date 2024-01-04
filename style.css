@@ -23,6 +23,7 @@
   /* Color - utalities */
   --color-violet-400: rgb(117, 24, 204);
   --color-slateblue-400: #283c4d;
+  --color-milkgreen-400: rgb(24, 204, 144);
 
   /* --------------------- */
   /* --- DESIGN TOKENS --- */
@@ -32,6 +33,7 @@
 
   /* Colors - Utalities */
   --color-highlight: var(--color-violet-400);
+  --color-highlight-grow: var(--color-milkgreen-400);
 
   /* TEXT */
   --text-color-dark: var(--color-black-400);
@@ -160,7 +162,24 @@ html.lenis {
 }
 
 .bold_md {
+  font-family: "Switzer";
   font-weight: 500;
+}
+
+.bold_bd {
+  font-family: "Switzer";
+  font-weight: 800;
+}
+
+.flex_col_center {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.gap_2 {
+  gap: 2rem;
 }
 
 .underline {

@@ -130,6 +130,10 @@ header p {
   object-fit: cover;
 }
 
+.growawish_hero_img img {
+  object-position: bottom;
+}
+
 /* Hero Details */
 .hero_details {
   display: flex;
@@ -159,10 +163,10 @@ header p {
   justify-content: space-between;
 }
 
-/* .hero_details_wrapper h3,
+.hero_details_wrapper h3,
 .hero_cta_wrapper h3 {
   margin-bottom: 1rem;
-} */
+}
 
 .hero_details div p {
   margin: 0.5rem 0rem;

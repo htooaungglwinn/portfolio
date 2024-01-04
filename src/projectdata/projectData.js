@@ -24,9 +24,10 @@ export default class ProjectData {
         type: "Redesign Project",
         projectId: 3,
         detail: "Website Redesign | August 2023",
-        title: "A fresh look home page for a startup brand",
+        title:
+          "A better usability and a fresh look home page for a startup brand",
         coverImage: "./public/images/Project GrowAWish.png",
-        pagelink: "#",
+        pagelink: "./src/pages/growawish",
       },
       {
         name: "The Samba Poster",
