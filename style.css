@@ -23,7 +23,7 @@
   /* Color - utalities */
   --color-violet-400: rgb(117, 24, 204);
   --color-slateblue-400: #283c4d;
-  --color-milkgreen-400: rgb(24, 204, 144);
+  --color-milkgreen-400: rgb(4, 179, 123);
 
   /* --------------------- */
   /* --- DESIGN TOKENS --- */
@@ -159,6 +159,10 @@ html.lenis {
 
 .highlight_color {
   color: var(--color-highlight);
+}
+
+.highlight_color_gaw {
+  color: var(--color-highlight-grow);
 }
 
 .bold_md {

@@ -27,7 +27,7 @@ export default class ProjectData {
         title:
           "A better usability and a fresh look home page for a startup brand",
         coverImage: "./public/images/Project GrowAWish.png",
-        pagelink: "./src/pages/growawish",
+        pagelink: "./src/pages/growawish.html",
       },
       {
         name: "The Samba Poster",
