@@ -131,7 +131,10 @@ header p {
 }
 
 .growawish_hero_img img {
-  object-position: bottom;
+  display: block;
+  width: 100%;
+  object-position: contain;
+  margin: 0 auto;
 }
 
 /* Hero Details */
