@@ -181,6 +181,17 @@ html.lenis {
   color: var(--color-highlight-grow);
 }
 
+.flex_row {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex_col {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
 .flex_col_center {
   display: flex;
   justify-content: center;
@@ -203,12 +214,6 @@ html.lenis {
 
 .border_grey {
   border: 1.5px solid grey;
-}
-
-.flex_col {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
 }
 
 .two_col {
@@ -643,7 +648,7 @@ p {
 .footer__resume-link {
   display: flex;
   justify-content: flex-start;
-  align-items: center;
+  align-items: start;
   color: var(--text-color-black);
   margin-top: 2rem;
 }
@@ -714,4 +719,9 @@ p {
 
 .fab-icon-wrapper svg {
   stroke-width: 1px;
+}
+
+.link {
+  border-bottom: 1px solid var(--text-color-dark);
+  border-bottom-width: 0px;
 }
