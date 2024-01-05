@@ -1,0 +1,16 @@
+.header {
+  font-family: "Coolvetica";
+  font-size: 4.3rem;
+  line-height: 130%;
+}
+
+.chandlar_gif {
+  width: 20vw;
+}
+
+.cta {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: black;
+  text-decoration: underline;
+}

@@ -7,8 +7,8 @@ export default class ProjectData {
         projectId: 1,
         detail: "Product design | August 2023",
         title: "An app that helps users to save time when dividing expenses",
-        coverImage: "./public/images/Project Mobile App Mockup.png",
-        pagelink: "./src/pages/splitnow.html",
+        coverImage: "./public/images/Project Mobile App Mockup.jpg",
+        pagelink: "./src/pages/404.html",
       },
       {
         name: "Bookies",
@@ -16,7 +16,7 @@ export default class ProjectData {
         projectId: 2,
         detail: "Product design | January 2022",
         title: "A more efficient way to save money on books",
-        coverImage: "./public/images/Project Bookies Cover.png",
+        coverImage: "./public/images/Project Bookies Cover.jpg",
         pagelink: "./src/pages/bookies.html",
       },
       {
@@ -46,7 +46,7 @@ export default class ProjectData {
         detail: "Poster Design | Grid Layouts",
         title:
           "Experimenting the fusion of two grid systems by the Swiss Legend Josef Müller-Brockmann",
-        coverImage: "./public/images/Nike Stussy Cover.png",
+        coverImage: "./public/images/Nike Stussy Cover.jpg",
         pagelink: "./src/pages/nikestussy.html",
       },
     ];
