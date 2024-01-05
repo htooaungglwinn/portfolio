@@ -1,5 +1,5 @@
-@import url("https://fonts.cdnfonts.com/css/coolvetica-2");
-@import url("https://fonts.cdnfonts.com/css/switzer");
+/* @import url("https://fonts.cdnfonts.com/css/coolvetica-2");
+@import url("https://fonts.cdnfonts.com/css/switzer"); */
 
 /* Variables */
 :root {
@@ -82,6 +82,16 @@ body p {
   line-height: 130%;
 }
 
+.bold_md {
+  font-family: "Switzer";
+  font-weight: 500;
+}
+
+.bold_bd {
+  font-family: "Switzer";
+  font-weight: 700;
+}
+
 /* lenis styles */
 
 html.lenis {
@@ -131,6 +141,12 @@ html.lenis {
 }
 
 /* utalities */
+
+.section-divider {
+  width: 100%;
+  height: 100px;
+}
+
 .container {
   width: 84vw;
   margin: 0 auto;
@@ -163,16 +179,6 @@ html.lenis {
 
 .highlight_color_gaw {
   color: var(--color-highlight-grow);
-}
-
-.bold_md {
-  font-family: "Switzer";
-  font-weight: 500;
-}
-
-.bold_bd {
-  font-family: "Switzer";
-  font-weight: 800;
 }
 
 .flex_col_center {
@@ -212,11 +218,6 @@ html.lenis {
 }
 
 /* End of Utalities */
-
-/* Fonts */
-/* @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap"); */
-/* @import url("https://fonts.cdnfonts.com/css/coolvetica-2");
-@import url("https://fonts.cdnfonts.com/css/switzer"); */
 
 body {
   overflow: auto;
