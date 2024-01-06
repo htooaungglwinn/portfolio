@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
   const links = [...document.getElementsByClassName("link")];
   const socialIcons = [...document.querySelectorAll(".social_icon")];
+  const protoCtas = [...document.querySelectorAll(".proto_button")];
 
   links.forEach(function (link) {
     link.addEventListener("mouseenter", function () {
@@ -26,6 +27,22 @@ document.addEventListener("DOMContentLoaded", function () {
     });
     icon.addEventListener("mouseleave", function () {
       gsap.to(icon, { opacity: 1 });
+    });
+  });
+
+  protoCtas.forEach(function (cta) {
+    cta.addEventListener("mouseenter", () => {
+      gsap.to(cta, {
+        opacity: 0.8,
+        duration: 0.2,
+      });
+    });
+
+    cta.addEventListener("mouseleave", () => {
+      gsap.to(cta, {
+        opacity: 1,
+        duration: 0.2,
+      });
     });
   });
 });

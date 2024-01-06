@@ -7,9 +7,11 @@ h2 {
   font-size: 1.9rem;
 }
 
-h3 {
+body h3 {
   text-transform: uppercase;
   font-size: 1.15rem;
+  font-weight: 700;
+  letter-spacing: -0.8px;
 }
 
 h4 {
@@ -19,7 +21,7 @@ h4 {
 body p,
 li {
   font-weight: 300;
-  letter-spacing: 0.1px;
+  /* letter-spacing: 0.1px; */
   line-height: 160%;
 }
 
@@ -153,9 +155,15 @@ header p {
   border-radius: 1000px;
 }
 
-/* .proto_button {
-  margin-top: 1rem;
-} */
+.proto_button {
+  background-color: var(--text-color-dark);
+  color: var(--bg-color-light);
+  border: 1px solid red;
+  border-bottom-width: 0px;
+  border-top-width: 0px;
+  border-left-width: 0px;
+  border-right-width: 0px;
+}
 
 .hero_details_wrapper {
   display: flex;
