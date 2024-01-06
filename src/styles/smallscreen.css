@@ -32,6 +32,11 @@
     transform-origin: center center;
   }
 
+  .project__details {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
   /* - - - - - - - - - - - - - - - - - - - - */
   /* SPLIT NOW PAGE */
 }

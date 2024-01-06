@@ -309,11 +309,9 @@ html.lenis {
 .intro__text {
   width: 45vw;
   margin: 0 auto;
-  margin-top: -8vh;
+  margin-top: -7vh;
   position: relative;
   z-index: 10;
-  /* border: 1px solid red; */
-  /* bottom: 3.6rem; */
 }
 
 .title_gif-wrapper {
@@ -476,8 +474,8 @@ html.lenis {
   height: 100%;
   /* display: inline-block; */
   position: relative;
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: 90px;
+  padding-bottom: 90px;
 }
 
 .project__details > div {
