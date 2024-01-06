@@ -309,7 +309,7 @@ html.lenis {
 .intro__text {
   width: 45vw;
   margin: 0 auto;
-  margin-top: 0vh;
+  margin-top: -8vh;
   position: relative;
   z-index: 10;
   /* border: 1px solid red; */
@@ -331,7 +331,7 @@ html.lenis {
 }
 
 .intro__title span {
-  font-size: 8.2rem;
+  font-size: 9.2rem;
   line-height: 130%;
   color: var(--text-color-black);
 }

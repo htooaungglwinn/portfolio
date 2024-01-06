@@ -17,6 +17,10 @@
     position: relative;
   }
 
+  .intro__title span {
+    font-size: 8.2rem;
+  }
+
   .intro__images img:nth-child(3) {
     top: 68vh;
     left: 54.5vw;
