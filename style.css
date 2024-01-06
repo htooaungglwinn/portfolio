@@ -309,7 +309,7 @@ html.lenis {
 .intro__text {
   width: 45vw;
   margin: 0 auto;
-  margin-top: -7vh;
+  margin-top: -4.5vh;
   position: relative;
   z-index: 10;
 }
@@ -324,7 +324,7 @@ html.lenis {
 }
 
 .intro__title {
-  margin-bottom: 2rem;
+  margin-bottom: 0rem;
   position: relative;
 }
 
