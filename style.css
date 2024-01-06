@@ -1,11 +1,6 @@
 /* @import url("https://fonts.cdnfonts.com/css/coolvetica-2");
 @import url("https://fonts.cdnfonts.com/css/switzer"); */
 
-@import url("./public/fonts/Coolvetica/CoolveticaRg-Bold.woff2");
-@import url("./public/fonts/Coolvetica/CoolveticaRg-Bold.woff");
-@import url("./public/fonts/Coolvetica/CoolveticaRg-Regular.woff2");
-@import url("./public/fonts/Coolvetica/CoolveticaRg-Regular.woff");
-
 /* Variables */
 :root {
   /* Design Variables */
@@ -55,49 +50,6 @@
   --cta-color-hover: var(--color-violet-400);
 }
 
-/* fonts */
-@font-face {
-  font-family: "Cool";
-  src: url(/public/fonts/Coolvetica/CoolveticaRg-Regular.woff2) format("woff2"),
-    url(/public/assets/fonts/Coolvetica/CoolveticaRg-Regular.woff)
-      format("woff");
-  font-weight: 400;
-}
-
-@font-face {
-  font-family: "Cool";
-  src: url(/public/fonts/Coolvetica/CoolveticaRg-Bold.woff2) format("woff2"),
-    url(/public/fonts/Coolvetica/CoolveticaRg-Bold.woff) format("woff");
-  font-weight: 700;
-}
-
-/* Swit */
-@font-face {
-  src: url("../../public/assets/fonts/Switzer/Switzer-Light.woff2")
-    format("woff2");
-  src: url("../../public/assets/fonts/Switzer/Switzer-Light.woff")
-    format("woff");
-  font-family: "Swit", Verdana, Geneva, Tahoma, sans-serif;
-  font-weight: 300;
-}
-
-@font-face {
-  src: url("../../public/assets/fonts/Switzer/Switzer-Medium.woff2")
-    format("woff2");
-  src: url("../../public/assets/fonts/Switzer/Switzer-Medium.woff")
-    format("woff");
-  font-family: "Swit", Verdana, Geneva, Tahoma, sans-serif;
-  font-weight: 500;
-}
-
-@font-face {
-  src: url("../../public/assets/fonts/Switzer/Switzer-Bold.woff2")
-    format("woff2");
-  src: url("../../public/assets/fonts/Switzer/Switzer-Bold.woff") format("woff");
-  font-family: "Swit", Verdana, Geneva, Tahoma, sans-serif;
-  font-weight: 700;
-}
-
 body {
   overflow: auto;
   color: var(--text-color-black);
@@ -119,6 +71,10 @@ body {
   box-sizing: border-box;
 }
 
+* {
+  font-family: "HK Grotesk", sans-serif;
+}
+
 body a {
   text-decoration: none;
 }
@@ -127,32 +83,33 @@ h1,
 h2,
 h3,
 h4 {
-  /* font-family: "Coolvetica", sans-serif; */
-  font-family: "Coolvetica", sans-serif;
-  font-weight: 700;
-  letter-spacing: 0.8px;
+  font-family: "HK Grotesk", sans-serif;
+  /* font-family: "Hack", sans-serif; */
+  font-weight: 900;
+  letter-spacing: -2.5px;
+}
+
+.footer h3 {
+  letter-spacing: -1px;
 }
 
 body p {
-  font-family: "Swit";
+  font-family: "HK Grotesk", sans-serif;
   font-weight: 300;
   font-size: 1.1rem;
-  letter-spacing: 0.2px;
+  letter-spacing: 0px;
   line-height: 130%;
 }
 
 .bold_md {
-  font-family: "Swit";
   font-weight: 500;
 }
 
 .bold_bd {
-  font-family: "Swit";
   font-weight: 700;
 }
 
 .hero_cta_wrapper a {
-  font-family: "Cool";
   font-weight: 400;
   line-height: 130%;
 }
@@ -484,8 +441,6 @@ html.lenis {
 }
 
 .fullwidth-image h2 {
-  font-family: "Coolvetica";
-  font-weight: 700;
   font-size: 6.4rem;
   margin-bottom: 1.6rem;
 }
@@ -532,6 +487,7 @@ html.lenis {
   bottom: -2.1rem;
   left: -28px;
   transform: rotateZ(-90deg);
+  letter-spacing: -8px;
 }
 
 .divider-line {
@@ -543,18 +499,9 @@ html.lenis {
 
 .project__details h3,
 .project__details p {
-  font-family: "Swit";
-  font-weight: 300;
   font-size: 1.1rem;
   max-width: 36ch;
 }
-
-/* .project__details p {
-  font-family: "Switzer";
-  font-weight: 300;
-  font-size: 1.1rem;
-  max-width: 36ch;
-} */
 
 .project_cta_container {
   display: flex;
@@ -575,7 +522,6 @@ html.lenis {
 .project__cta {
   display: inline-block;
   text-decoration: none;
-  font-family: "Switzer";
   font-weight: 500;
   line-height: 130%;
   font-size: 1.1rem;
@@ -661,7 +607,7 @@ html.lenis {
 }
 
 .footer__header h2 {
-  font-family: "Coolvetica";
+  /* font-family: "Coolvetica"; */
   font-weight: 300;
   font-size: 3.3rem;
 }
@@ -751,7 +697,6 @@ html.lenis {
 
 .fab-icon-wrapper a {
   text-decoration: none;
-  font-family: "Switzer";
   font-weight: 400;
   font-size: 1.1rem;
   color: var(--text-color-black);
