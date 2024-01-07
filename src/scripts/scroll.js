@@ -15,7 +15,7 @@ class Scroll {
   // Start Lenis after the document is fully loaded
   _onDocumentLoaded() {
     this.lenis.start();
-    console.log("lenis has started");
+    // console.log("lenis has started");
   }
 
   // after creating lenis, animate scroll
@@ -26,7 +26,7 @@ class Scroll {
 }
 
 window.addEventListener("load", () => {
-  console.log("Window was loaded was ran");
+  // console.log("Window was loaded was ran");
   const scroll = new Scroll();
   scroll._onDocumentLoaded(); // Start Lenis animation after the document is fully loaded
   scroll._render(); // Start rendering animation

@@ -2,6 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const links = [...document.getElementsByClassName("link")];
   const socialIcons = [...document.querySelectorAll(".social_icon")];
   const protoCtas = [...document.querySelectorAll(".proto_button")];
+  const scrollToPrototypeLink = document.querySelector(".proto_button");
 
   links.forEach(function (link) {
     link.addEventListener("mouseenter", function () {
@@ -45,4 +46,18 @@ document.addEventListener("DOMContentLoaded", function () {
       });
     });
   });
+
+  if (scrollToPrototypeLink) {
+    scrollToPrototypeLink.addEventListener("click", function (event) {
+      event.preventDefault();
+
+      const targetSection = document.getElementById("mockup");
+
+      if (targetSection) {
+        targetSection.scrollIntoView({
+          behavior: "smooth",
+        });
+      }
+    });
+  }
 });
