@@ -172,6 +172,15 @@ html.lenis {
 
 /* utalities */
 
+.btn {
+  padding-bottom: 10px;
+  background-color: var(--text-color-dark);
+  color: var(--bg-color-light);
+  border: 1px solid red;
+  padding: 1.2rem 1.8rem;
+  border-radius: 100rem;
+}
+
 .section-divider {
   width: 100%;
   height: 100px;
@@ -298,7 +307,8 @@ html.lenis {
 }
 
 #nav #brand_logo {
-  width: 128px;
+  /* width: 40px; */
+  width: 100%;
 }
 
 .icon_container {
@@ -332,6 +342,7 @@ html.lenis {
   font-size: 9.2rem;
   line-height: 130%;
   color: var(--text-color-black);
+  letter-spacing: -3.5px;
 }
 
 .intro__sub-title p {
@@ -447,8 +458,9 @@ html.lenis {
 }
 
 .fullwidth-image h2 {
-  font-size: 6.4rem;
+  font-size: 7.2rem;
   margin-bottom: 1.6rem;
+  letter-spacing: -2px;
 }
 
 /* Projects */
@@ -532,10 +544,9 @@ html.lenis {
   line-height: 130%;
   font-size: 1.1rem;
   color: var(--text-color-black);
-  /* border-bottom: 2px solid var(--project-cta-border); */
-  padding-bottom: 10px;
-  /* transform: translateY(70px); */
-  /* border: 1px solid green; */
+  padding: 0.5rem 0rem;
+  /* border-bottom: 2px solid black; */
+  border-bottom: 2px solid var(--text-color-dark);
 }
 
 .project_cta_icon {

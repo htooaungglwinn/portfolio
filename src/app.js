@@ -29,7 +29,7 @@ window.addEventListener("load", () => {
 
   //   Load Initial State
   const _loadInitialState = () => {
-    console.log("Loading Initital State");
+    // console.log("Loading Initital State");
     // nav images are hidden
     navImages.forEach((navImg) => {
       gsap.set(navImg, {
@@ -57,7 +57,7 @@ window.addEventListener("load", () => {
 
   //   Create Parallex Images
   const _createPareallexImages = () => {
-    console.log("_createPareallexImages function ran");
+    // console.log("_createPareallexImages function ran");
     const tl = gsap.timeline({
       scrollTrigger: {
         trigger: introSection,
@@ -81,7 +81,7 @@ window.addEventListener("load", () => {
 
   //  Get Final State
   const _getFinalState = () => {
-    console.log("Get Final State was ran");
+    // console.log("Get Final State was ran");
     // To remove images from their initial position
     imagesWrapper.classList.remove("initial");
 
@@ -96,7 +96,7 @@ window.addEventListener("load", () => {
 
   //   Setting Initial State
   const _setInitialState = () => {
-    console.log("Set Initial State was ran");
+    // console.log("Set Initial State was ran");
     // To set images to the initial postitions they will aimate
     imagesWrapper.classList.add("initial");
 
@@ -109,7 +109,7 @@ window.addEventListener("load", () => {
 
   //   Reveal Nav
   const _revealNav = () => {
-    console.log("Reveal Nav was ran");
+    // console.log("Reveal Nav was ran");
     if (imagesWrapper) {
       navImages.forEach((navImg) => {
         gsap.to(navImg, {
@@ -124,7 +124,7 @@ window.addEventListener("load", () => {
 
   //   Reveal Content
   const _revealContent = () => {
-    console.log("Reveal content was ran");
+    // console.log("Reveal content was ran");
     if (imagesWrapper) {
       const tl = gsap.timeline({
         defaults: {
@@ -151,7 +151,7 @@ window.addEventListener("load", () => {
 
   //   Animate Images
   const _animateImages = () => {
-    console.log("Animate Images was ran");
+    // console.log("Animate Images was ran");
     // animating with Flip
     Flip.to(state, {
       duration: 1.5,
@@ -163,7 +163,7 @@ window.addEventListener("load", () => {
 
   //   Fading Up Images
   const _fadeUpImages = () => {
-    console.log("Fade up images was ran");
+    // console.log("Fade up images was ran");
     // without onComplete callback, both animations will start at once
     return gsap.to([images], {
       opacity: 1,
@@ -176,7 +176,7 @@ window.addEventListener("load", () => {
 
   //   Pinned Section
   const _createPinnedSection = () => {
-    console.log("Create Pinned Section was ran");
+    // console.log("Create Pinned Section was ran");
     const tl = gsap.timeline({
       scrollTrigger: {
         trigger: ".fullwidth-image",
@@ -223,7 +223,7 @@ window.addEventListener("load", () => {
   const _createProjectSectionTag = () => {
     const projectData = new ProjectData();
 
-    console.log("Crate Project Section Tags was ran");
+    // console.log("Crate Project Section Tags was ran");
 
     function elementFromHtml(html) {
       const template = document.createElement("template");
@@ -269,6 +269,40 @@ window.addEventListener("load", () => {
       projectCTA.addEventListener("click", (event) => {
         event.preventDefault();
         window.location.href = project.pagelink;
+      });
+
+      projectCTA.addEventListener("mouseover", () => {
+        const projectCtaicon = projectCTA.querySelector(".project_cta_icon");
+        const tl = gsap.timeline({ ease: "expos.out" });
+        tl.to(projectCTA, {
+          duration: 0.08,
+          color: "var(--color-violet-400)",
+          borderBottom: "2px solid var(--color-violet-400)",
+        }).to(
+          projectCtaicon,
+          {
+            yPercent: -20,
+          },
+          "0"
+        );
+        tl.play();
+      });
+
+      projectCTA.addEventListener("mouseleave", () => {
+        const projectCtaicon = projectCTA.querySelector(".project_cta_icon");
+        const tl = gsap.timeline({ ease: "expos.out" });
+        tl.to(projectCTA, {
+          duration: 0.03,
+          color: "var(--text-color-dark)",
+          borderBottom: "2px solid var(--text-color-dark)",
+        }).to(
+          projectCtaicon,
+          {
+            yPercent: 0,
+          },
+          "0"
+        );
+        tl.play();
       });
 
       projectSection.append(projectListTags);
@@ -321,35 +355,35 @@ window.addEventListener("load", () => {
           .to(projectCta, { y: 0, ease: "back.out(2)" }, 0 + 0.1)
           .to(footerLine, { scaleX: 1 }, 0 + 0.3);
 
-        // project events
-        cta_wrapper.addEventListener("mouseover", () => {
-          const tl = gsap.timeline({ ease: "expos.out" });
-          tl.to(projectCta, {
-            duration: 0.05,
-            color: "var(--color-violet-400)",
-          }).to(
-            projectCtaIcon,
-            {
-              yPercent: -20,
-            },
-            "0"
-          );
-          tl.play();
-        });
-        cta_wrapper.addEventListener("mouseleave", () => {
-          const tl = gsap.timeline({ ease: "expos.out" });
-          tl.to(projectCta, {
-            duration: 0.03,
-            color: "var(--text-color-dark)",
-          }).to(
-            projectCtaIcon,
-            {
-              yPercent: 0,
-            },
-            "0"
-          );
-          tl.play();
-        });
+        // // project events
+        // cta_wrapper.addEventListener("mouseover", () => {
+        //   const tl = gsap.timeline({ ease: "expos.out" });
+        //   tl.to(projectCta, {
+        //     duration: 0.05,
+        //     color: "var(--color-violet-400)",
+        //   }).to(
+        //     projectCtaIcon,
+        //     {
+        //       yPercent: -20,
+        //     },
+        //     "0"
+        //   );
+        //   tl.play();
+        // });
+        // cta_wrapper.addEventListener("mouseleave", () => {
+        //   const tl = gsap.timeline({ ease: "expos.out" });
+        //   tl.to(projectCta, {
+        //     duration: 0.03,
+        //     color: "var(--text-color-dark)",
+        //   }).to(
+        //     projectCtaIcon,
+        //     {
+        //       yPercent: 0,
+        //     },
+        //     "0"
+        //   );
+        //   tl.play();
+        // });
       });
 
       // this.projectSection.append(projectListTags);

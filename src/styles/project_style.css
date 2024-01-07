@@ -25,6 +25,10 @@ li {
   line-height: 160%;
 }
 
+ul h4 span {
+  font-family: "Inter", sans-serif;
+}
+
 .statement_title {
   font-weight: 400;
   font-size: 1.4rem;

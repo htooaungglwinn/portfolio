@@ -21,7 +21,7 @@ export default class ProjectData {
       },
       {
         name: "Grow A Wish",
-        type: "Redesign Project",
+        type: "Project",
         projectId: 3,
         detail: "Website Redesign | August 2023",
         title:
@@ -30,8 +30,8 @@ export default class ProjectData {
         pagelink: "./src/pages/growawish.html",
       },
       {
-        name: "The Samba Poster",
-        type: "Poster Design",
+        name: "Samba Poster",
+        type: "Poster",
         projectId: 4,
         detail: "Poster Design | Grid Layout",
         title:
@@ -41,7 +41,7 @@ export default class ProjectData {
       },
       {
         name: "Nike Poster",
-        type: "Poster Design",
+        type: "Poster",
         projectId: 5,
         detail: "Poster Design | Grid Layouts",
         title:
