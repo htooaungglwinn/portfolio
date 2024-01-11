@@ -56,6 +56,13 @@ body {
   background-color: var(--bg-color-white);
   background-color: var(--bg-color-light);
   color: var(--text-color-dark);
+  /* background-color: #f1f1f1;
+  opacity: 0.8;
+  background-image: radial-gradient(
+    #898787 0.6000000000000001px,
+    #f1f1f1 0.6000000000000001px
+  );
+  background-size: 12px 12px; */
 }
 
 /* Utalities */
