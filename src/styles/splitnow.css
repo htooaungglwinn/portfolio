@@ -21,11 +21,16 @@
   width: 100%;
   display: flex;
   justify-content: center;
+  overflow: hidden;
+  /* border: 1px solid red; */
 }
 
 .key_solution img {
+  width: 109%;
   display: inline-block;
-  width: 300px;
+  object-fit: cover;
+  /* width: 300px; */
+  /* border: 1px solid blue; */
 }
 
 /* Design Exploration */

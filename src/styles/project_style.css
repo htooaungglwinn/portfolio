@@ -312,3 +312,13 @@ h3 {
 .samba_grid_img {
   width: 100%;
 }
+
+.mockup_container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.mockup {
+  width: 29%;
+}

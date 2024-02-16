@@ -7,8 +7,8 @@ export default class ProjectData {
         projectId: 1,
         detail: "Product design | August 2023",
         title: "An app that helps users to save time when dividing expenses",
-        coverImage: "./public/images/Project Mobile App Mockup.jpg",
-        pagelink: "./src/pages/404.html",
+        coverImage: "./public/images/SplitNowCover.jpg",
+        pagelink: "./src/pages/splitnow.html",
       },
       {
         name: "Bookies",
