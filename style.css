@@ -751,3 +751,14 @@ html.lenis {
   border-bottom: 1px solid var(--text-color-dark);
   border-bottom-width: 0px;
 }
+
+/* footer */
+.footer_attributes {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  /* border: 1px solid red; */
+  /* margin-top: 80px; */
+  padding: 20px;
+  /* background-color: red; */
+}

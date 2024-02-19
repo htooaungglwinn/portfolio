@@ -57,3 +57,27 @@
 .design_improve_img img {
   width: 70%;
 }
+
+/* lottie icon */
+.lottie_icon {
+  margin-bottom: 1.5rem;
+  width: 150px;
+  height: 150px;
+}
+
+.lottie_container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 4rem 0rem;
+  gap: 2rem;
+}
+
+.lottie_wrapper {
+  width: 30%;
+  /* border: 1px solid blue; */
+}
+
+.lottie_title {
+  font-size: 1rem;
+}
