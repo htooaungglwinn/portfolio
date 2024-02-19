@@ -762,3 +762,11 @@ html.lenis {
   padding: 20px;
   /* background-color: red; */
 }
+
+.proto_button {
+  opacity: 1;
+}
+
+.proto_button:hover {
+  opacity: 0.7;
+}
