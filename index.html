@@ -45,7 +45,7 @@
       href="./src/styles/mobilescreen.css"
     />
   </head>
-  <body>
+  <body id="wrapper">
     <!-- Intro -->
     <section class="intro">
       <!-- Nav bar -->
@@ -71,7 +71,7 @@
                 src="./public/assets/icons/Resume.svg"
                 alt="Resume Icon"
             /></a>
-            <a
+            <!-- <a
               href="https://www.instagram.com/htooaungglwinn/"
               target="_blank"
               rel="noopener noreferrer"
@@ -89,7 +89,7 @@
                 class="social_icon"
                 src="./public/assets/icons/LinkedIn Icon.svg"
                 alt="LinkedIn logo image"
-            /></a>
+            /></a> -->
           </div>
         </div>
       </section>
@@ -103,19 +103,20 @@
           </div>
 
           <span data-animation="text-reveal">
-            <span>A UX Passionate</span>
+            <span id="sub_title">A UX Passionate👋</span>
           </span>
         </h1>
         <h3 class="intro__sub-title">
           <span data-animation="text-reveal">
             <p>
-              I'm a cross-functional designer with a solid foundation in coding,
-              specializing in UX research, dedicated to crafting immersive
+              I'm a cross-functional designer with a solid foundation in coding
+              and specializing in UX research, dedicated to engaging immersive
               digital experiences for websites and mobile apps.
             </p>
           </span>
         </h3>
       </div>
+      <div class="mouse"></div>
       <!-- Intro Images -->
       <div class="intro__images">
         <img
@@ -156,24 +157,30 @@
         <div class="footer__header">
           <div class="footer__img-wrapper">
             <img
+              class="footer_img"
               src="./public/images/Footer Portrait.jpg"
               alt="Portrait picture of the designer"
             />
           </div>
           <div class="footer_text">
-            <h2 class="about_title">A little bit about me👋</h2>
+            <h2 class="about_title">A little bit about myself👋</h2>
             <div class="content_divider_half"></div>
             <p class="about_body">
               I started my career as a web designer asking "Why" to everything I
-              see on the interfaces. Then, I got to know what user experience
-              was after attending Google UX Career certificate program and that
-              was where I found what I was missing.
+              see on the interfaces. <br />Then, I got to know what user
+              experience was after attending Google UX Career certificate
+              program and that was where I found what I was missing.
             </p>
             <div class="content_divider_half"></div>
             <p>
-              Now, I've been in the design industry for nearly 2 years, crafting
-              and collaborating with other designers in enhancing user
-              experience for digital products, from websites to mobile apps.
+              In my nearly 2 years as a designer, I've collaborated with teams
+              to create and improve user experiences for a variety of immersive
+              digital products, from websites to dedicated mobile apps.
+            </p>
+            <br />
+            <p>
+              So, whether you have a project on your mind or just connecting, do
+              reach me out from the links below!
             </p>
           </div>
         </div>
@@ -314,6 +321,8 @@
       </div>
     </footer>
     <!-- <script type="module" src="./src/scripts/scroll.js"></script> -->
+    <!-- Grained.js -->
+    <script src="/src/grained.js"></script>
     <script type="module" src="./src/app.js"></script>
     <script type="module" src="/src/scripts/events.js"></script>
   </body>

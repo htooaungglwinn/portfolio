@@ -395,6 +395,17 @@ window.addEventListener("load", () => {
   // Provoking functional logics
   //   - - - - - - - - - //
 
+  var options = {
+    animate: true,
+    patternWidth: 100,
+    patternHeight: 100,
+    grainOpacity: 0.05,
+    grainDensity: 1,
+    grainWidth: 1,
+    grainHeight: 1,
+  };
+
+  grained("#wrapper", options);
   //   First loading initial images states
   _loadInitialState();
   //   Getting Images Final Positions

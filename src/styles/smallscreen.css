@@ -18,11 +18,11 @@
   }
 
   .intro__title span {
-    font-size: 8.2rem;
+    font-size: 10rem;
   }
 
   .intro__images img:nth-child(3) {
-    top: 45vh;
+    top: 68vh;
     left: 64vw;
   }
 

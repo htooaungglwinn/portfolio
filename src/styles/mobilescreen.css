@@ -188,6 +188,7 @@
     overflow: hidden;
     display: inline-block;
     border-radius: 100%;
+    clip-path: circle(50% at 50% 50%);
   }
 
   .footer_text {
