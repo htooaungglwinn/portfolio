@@ -72,7 +72,7 @@ window.addEventListener("load", () => {
         image,
         {
           ease: "none",
-          yPercent: gsap.utils.random(-100, -50),
+          yPercent: gsap.utils.random(-160, -90),
         },
         "<"
       );

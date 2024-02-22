@@ -4,9 +4,9 @@
     } */
 
   .intro__text {
-    width: 45vw;
+    width: 50vw;
     margin: 0 auto;
-    margin-top: 10.4vh;
+    margin-top: 14vh;
     position: relative;
     z-index: 10;
     bottom: 5.6rem;
@@ -22,8 +22,8 @@
   }
 
   .intro__images img:nth-child(3) {
-    top: 68vh;
-    left: 54.5vw;
+    top: 45vh;
+    left: 64vw;
   }
 
   .intro__images.initial img {

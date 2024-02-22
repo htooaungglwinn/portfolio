@@ -4,20 +4,23 @@
   .intro__text {
     width: 80vw;
     margin: 0 auto;
-    margin-top: 14.4vh;
+    margin-top: 18.4vh;
     position: relative;
     z-index: 10;
   }
 
   .intro__title span {
-    font-size: 5.1rem;
+    font-size: 6.5rem;
     line-height: 130%;
     color: var(--text-color-black);
+    letter-spacing: -0.3rem;
+    line-height: 98%;
   }
 
   .intro__sub-title p {
     font-size: 0.9rem;
     width: 60%;
+    margin-top: 3rem;
   }
 
   /* intro images sizes */
@@ -48,7 +51,7 @@
   }
 
   .intro__images img:nth-child(3) {
-    top: 75vh;
+    top: 65vh;
     left: 60vw;
   }
 
@@ -180,11 +183,15 @@
   }
 
   .footer__img-wrapper {
-    width: 180;
-    height: 180;
+    width: 220px;
+    height: 220px;
     overflow: hidden;
     display: inline-block;
     border-radius: 100%;
+  }
+
+  .footer_text {
+    width: 100%;
   }
 
   .footer__header img {
