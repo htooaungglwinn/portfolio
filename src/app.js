@@ -395,17 +395,6 @@ window.addEventListener("load", () => {
   // Provoking functional logics
   //   - - - - - - - - - //
 
-  var options = {
-    animate: true,
-    patternWidth: 100,
-    patternHeight: 100,
-    grainOpacity: 0.07,
-    grainDensity: 1,
-    grainWidth: 1.1,
-    grainHeight: 1,
-  };
-
-  grained("#wrapper", options);
   //   First loading initial images states
   _loadInitialState();
   //   Getting Images Final Positions
@@ -420,4 +409,30 @@ window.addEventListener("load", () => {
   _createPinnedSection();
   //   Creating projects dynamically
   _createProjectSectionTag();
+
+  // Grained.js
+  function runGrained() {
+    var options = {
+      animate: true,
+      patternWidth: 100,
+      patternHeight: 100,
+      grainOpacity: 0.07,
+      grainDensity: 1,
+      grainWidth: 1.1,
+      grainHeight: 1,
+    };
+    grained("#wrapper", options);
+  }
+
+  const mediaQuery = window.matchMedia("(min-width: 999px)");
+
+  if (mediaQuery.matches) {
+    runGrained();
+  }
+
+  window.addEventListener("resize", () => {
+    if (mediaQuery.matches) {
+      runGrained();
+    }
+  });
 });
