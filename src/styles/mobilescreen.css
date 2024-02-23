@@ -2,25 +2,30 @@
   /* intro text */
 
   .intro__text {
-    width: 80vw;
+    width: 84vw;
     margin: 0 auto;
-    margin-top: 18.4vh;
+    margin-top: 25vh;
     position: relative;
     z-index: 10;
   }
 
   .intro__title span {
-    font-size: 6.5rem;
+    font-size: 6rem;
     line-height: 130%;
     color: var(--text-color-black);
     letter-spacing: -0.3rem;
     line-height: 98%;
   }
 
+  #sub_title {
+    font-size: 2.1rem;
+    letter-spacing: -0.1rem;
+  }
+
   .intro__sub-title p {
     font-size: 0.9rem;
     width: 60%;
-    margin-top: 3rem;
+    margin-top: 1.5rem;
   }
 
   /* intro images sizes */
@@ -41,18 +46,18 @@
 
   /* FINAL Position */
   .intro__images img:nth-child(1) {
-    top: 20vh;
-    right: 8vw;
+    top: 15vh;
+    right: -2vw;
   }
 
   .intro__images img:nth-child(2) {
-    top: 48.9vh;
+    top: 62vh;
     left: -1vw;
   }
 
   .intro__images img:nth-child(3) {
-    top: 65vh;
-    left: 60vw;
+    top: 78vh;
+    right: -20vw;
   }
 
   /* Initial Position */
@@ -61,6 +66,8 @@
     left: 50%;
     transform-origin: center center;
   }
+
+  /* mouse mobile size */
 
   /* Full Width Image */
   .fullwidth-image h2 {

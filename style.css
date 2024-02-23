@@ -318,6 +318,12 @@ html.lenis {
   z-index: 100;
 }
 
+.mouse_wrapper {
+  position: absolute;
+  bottom: 2rem;
+  width: 100%;
+}
+
 .mouse {
   margin: 0 auto;
   width: 32px;
