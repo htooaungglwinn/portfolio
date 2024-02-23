@@ -354,36 +354,6 @@ window.addEventListener("load", () => {
           .to(dividerLine, { scaleX: 1 }, 0 + 0.1)
           .to(projectCta, { y: 0, ease: "back.out(2)" }, 0 + 0.1)
           .to(footerLine, { scaleX: 1 }, 0 + 0.3);
-
-        // // project events
-        // cta_wrapper.addEventListener("mouseover", () => {
-        //   const tl = gsap.timeline({ ease: "expos.out" });
-        //   tl.to(projectCta, {
-        //     duration: 0.05,
-        //     color: "var(--color-violet-400)",
-        //   }).to(
-        //     projectCtaIcon,
-        //     {
-        //       yPercent: -20,
-        //     },
-        //     "0"
-        //   );
-        //   tl.play();
-        // });
-        // cta_wrapper.addEventListener("mouseleave", () => {
-        //   const tl = gsap.timeline({ ease: "expos.out" });
-        //   tl.to(projectCta, {
-        //     duration: 0.03,
-        //     color: "var(--text-color-dark)",
-        //   }).to(
-        //     projectCtaIcon,
-        //     {
-        //       yPercent: 0,
-        //     },
-        //     "0"
-        //   );
-        //   tl.play();
-        // });
       });
 
       // this.projectSection.append(projectListTags);
@@ -394,21 +364,6 @@ window.addEventListener("load", () => {
   //  - - - - - - - - - //
   // Provoking functional logics
   //   - - - - - - - - - //
-
-  // //   First loading initial images states
-  // _loadInitialState();
-  // //   Getting Images Final Positions
-  // _getFinalState();
-  // //   Getting Images Initial Positions
-  // _setInitialState();
-  // //   Animate images on scroll
-  // _createPareallexImages();
-  // //   Fading up images animation
-  // _fadeUpImages();
-  // //   Pinning scroll image section
-  // _createPinnedSection();
-  // //   Creating projects dynamically
-  // _createProjectSectionTag();
 
   if (window.matchMedia("(max-width: 999px)").matches) {
     console.log("Screen width is below 1000px");

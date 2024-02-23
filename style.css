@@ -437,10 +437,9 @@ html.lenis {
 
 .intro__title span {
   font-size: 13rem;
-  line-height: 130%;
   color: var(--text-color-black);
   letter-spacing: -4.5px;
-  line-height: 100%;
+  line-height: 120%;
 }
 
 .intro__sub-title p {
