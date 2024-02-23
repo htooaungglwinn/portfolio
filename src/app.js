@@ -395,23 +395,38 @@ window.addEventListener("load", () => {
   // Provoking functional logics
   //   - - - - - - - - - //
 
-  //   First loading initial images states
-  _loadInitialState();
-  //   Getting Images Final Positions
-  _getFinalState();
-  //   Getting Images Initial Positions
-  _setInitialState();
-  //   Animate images on scroll
-  _createPareallexImages();
-  //   Fading up images animation
-  _fadeUpImages();
-  //   Pinning scroll image section
-  _createPinnedSection();
-  //   Creating projects dynamically
-  _createProjectSectionTag();
+  // //   First loading initial images states
+  // _loadInitialState();
+  // //   Getting Images Final Positions
+  // _getFinalState();
+  // //   Getting Images Initial Positions
+  // _setInitialState();
+  // //   Animate images on scroll
+  // _createPareallexImages();
+  // //   Fading up images animation
+  // _fadeUpImages();
+  // //   Pinning scroll image section
+  // _createPinnedSection();
+  // //   Creating projects dynamically
+  // _createProjectSectionTag();
 
-  // Grained.js
-  function runGrained() {
+  if (window.matchMedia("(max-width: 999px)").matches) {
+    console.log("Screen width is below 1000px");
+    //   First loading initial images states
+    _loadInitialState();
+    //   Getting Images Final Positions
+    _getFinalState();
+    //   Getting Images Initial Positions
+    _setInitialState();
+    //   Animate images on scroll
+    _createPareallexImages();
+    //   Fading up images animation
+    _fadeUpImages();
+    //   Pinning scroll image section
+    _createPinnedSection();
+    //   Creating projects dynamically
+    _createProjectSectionTag();
+  } else {
     var options = {
       animate: true,
       patternWidth: 100,
@@ -422,17 +437,21 @@ window.addEventListener("load", () => {
       grainHeight: 1,
     };
     grained("#wrapper", options);
+
+    console.log("Screen width is above 1000px");
+    //   First loading initial images states
+    _loadInitialState();
+    //   Getting Images Final Positions
+    _getFinalState();
+    //   Getting Images Initial Positions
+    _setInitialState();
+    //   Animate images on scroll
+    _createPareallexImages();
+    //   Fading up images animation
+    _fadeUpImages();
+    //   Pinning scroll image section
+    _createPinnedSection();
+    //   Creating projects dynamically
+    _createProjectSectionTag();
   }
-
-  const mediaQuery = window.matchMedia("(min-width: 999px)");
-
-  if (mediaQuery.matches) {
-    runGrained();
-  }
-
-  window.addEventListener("resize", () => {
-    if (mediaQuery.matches) {
-      runGrained();
-    }
-  });
 });
