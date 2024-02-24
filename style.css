@@ -21,7 +21,7 @@
   --color-grey-400: #676767;
 
   /* Color - utalities */
-  --color-violet-400: rgb(117, 24, 204);
+  --color-violet-400: #7518cc;
   --color-slateblue-400: #283c4d;
   --color-milkgreen-400: rgb(4, 179, 123);
 
@@ -322,15 +322,18 @@ html.lenis {
   position: absolute;
   bottom: 2rem;
   width: 100%;
+  overflow: hidden;
 }
 
 .mouse {
+  opacity: 0.6;
   margin: 0 auto;
   width: 32px;
   height: 56px;
-  border: 2px solid #666666;
+  border: 2px solid #676767;
   border-radius: 60px;
   position: relative;
+  transform: translateY(120%);
   &::before {
     content: "";
     width: 8px;
@@ -339,7 +342,7 @@ html.lenis {
     top: 10px;
     left: 50%;
     transform: translateX(-50%);
-    background-color: #333;
+    background-color: #7518cc;
     border-radius: 50%;
     opacity: 1;
     animation: wheel 2s infinite;
@@ -433,6 +436,16 @@ html.lenis {
 #sub_title {
   font-size: 4rem;
   line-height: 110%;
+  align-items: center;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#coffee_icon {
+  display: inline-block;
+  width: 4rem;
+  height: 4rem;
 }
 
 .intro__title span {
@@ -645,10 +658,28 @@ html.lenis {
   font-weight: 500;
   line-height: 130%;
   font-size: 1.1rem;
-  color: var(--text-color-black);
-  padding: 0.5rem 0rem;
-  /* border-bottom: 2px solid black; */
-  border-bottom: 2px solid var(--text-color-dark);
+  color: var(--color-violet-400);
+  padding: 0.7rem 0rem;
+  position: relative;
+  border-radius: 300px;
+  overflow: hidden;
+  border: 2px solid var(--color-violet-400);
+}
+
+.cta_text {
+  margin: 0rem 2rem;
+  color: var(--color-violet-400);
+}
+
+.cta_fill {
+  background: #daeaf6;
+  width: 110%;
+  height: 110%;
+  position: absolute;
+  top: 0;
+  z-index: -3;
+  padding: -1.2rem;
+  transform: translateY(110px);
 }
 
 .project_cta_icon {

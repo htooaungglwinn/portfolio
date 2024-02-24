@@ -21,6 +21,7 @@ window.addEventListener("load", () => {
   const introSection = document.querySelector(".intro");
   const imagesWrapper = document.querySelector(".intro__images");
   const images = [...imagesWrapper.querySelectorAll("img")];
+  const mouse = document.querySelector(".mouse");
 
   const titleLines = 'h1 [data-animation="text-reveal"] > *';
   const subTitleLine = 'h3 [data-animation="text-reveal"] > *';
@@ -136,14 +137,23 @@ window.addEventListener("load", () => {
 
       tl.to(titleLines, {
         stagger: 0.2,
-      }).to(
-        subTitleLine,
-        {
-          ease: "expo.inOut",
-          onComplete: () => _revealNav(),
-        },
-        "<+0.4"
-      );
+      })
+        .to(
+          subTitleLine,
+          {
+            ease: "expo.inOut",
+            onComplete: () => _revealNav(),
+          },
+          "<+0.4"
+        )
+        .to(
+          mouse,
+          {
+            ease: "expo.inOut",
+            onComplete: () => _revealNav(),
+          },
+          "<+0.8"
+        );
 
       return tl;
     }
@@ -244,12 +254,12 @@ window.addEventListener("load", () => {
                               <p class="project-description">${project.title}</p>
                               <div class="project_cta_container">
                                 <div class="project__cta-wrapper">
-                                  <a href="#" class="project__cta" data-text=" Case Study">View ${project.type}
-                                  <svg class="project_cta_icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" 
-                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" 
-                                    stroke-linejoin="round" class="feather feather-arrow-up-right">
-                                    <line x1="7" y1="17" x2="17" y2="7"></line>
-                                    <polyline points="7 7 17 7 17 17"></polyline></svg>
+                                  <a href="#" class="project__cta" data-text=" Case Study"><span class="cta_text">${project.type}<svg class="project_cta_icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" 
+                                  fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" 
+                                  stroke-linejoin="round" class="feather feather-arrow-up-right">
+                                  <line x1="7" y1="17" x2="17" y2="7"></line>
+                                  <polyline points="7 7 17 7 17 17"></polyline></svg></span>
+                                  <div class="cta_fill"></div>
                                   </a>
                                   <div class="project_cta_line"></div>
                                 </div>
@@ -271,37 +281,72 @@ window.addEventListener("load", () => {
         window.location.href = project.pagelink;
       });
 
+      // projectCTA.addEventListener("mouseover", () => {
+      //   const projectCtaicon = projectCTA.querySelector(".project_cta_icon");
+      //   const tl = gsap.timeline({ ease: "expos.out" });
+      //   tl.to(projectCTA, {
+      //     duration: 0.08,
+      //     color: "var(--color-violet-400)",
+      //     borderBottom: "2px solid var(--color-violet-400)",
+      //   }).to(
+      //     projectCtaicon,
+      //     {
+      //       yPercent: -20,
+      //     },
+      //     "0"
+      //   );
+      //   tl.play();
+      // });
+
       projectCTA.addEventListener("mouseover", () => {
         const projectCtaicon = projectCTA.querySelector(".project_cta_icon");
+        const projectFiller = projectCTA.querySelector(".cta_fill");
+        const ctaText = projectCTA.querySelector(".cta_text");
         const tl = gsap.timeline({ ease: "expos.out" });
         tl.to(projectCTA, {
           duration: 0.08,
-          color: "var(--color-violet-400)",
-          borderBottom: "2px solid var(--color-violet-400)",
-        }).to(
-          projectCtaicon,
-          {
-            yPercent: -20,
-          },
-          "0"
-        );
+        })
+          .to(
+            projectCtaicon,
+            {
+              yPercent: -20,
+            },
+            "0"
+          )
+          .to(
+            projectFiller,
+            {
+              y: 0,
+              ease: "expos.inout",
+              duration: 0.3,
+            },
+            "0"
+          );
         tl.play();
       });
 
       projectCTA.addEventListener("mouseleave", () => {
         const projectCtaicon = projectCTA.querySelector(".project_cta_icon");
+        const projectFiller = projectCTA.querySelector(".cta_fill");
+        const ctaText = projectCTA.querySelector(".cta_text");
         const tl = gsap.timeline({ ease: "expos.out" });
         tl.to(projectCTA, {
           duration: 0.03,
-          color: "var(--text-color-dark)",
-          borderBottom: "2px solid var(--text-color-dark)",
-        }).to(
-          projectCtaicon,
-          {
-            yPercent: 0,
-          },
-          "0"
-        );
+        })
+          .to(
+            projectCtaicon,
+            {
+              yPercent: 0,
+            },
+            "0"
+          )
+          .to(
+            projectFiller,
+            {
+              y: 130,
+            },
+            "0"
+          );
         tl.play();
       });
 
