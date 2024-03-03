@@ -268,7 +268,8 @@ window.addEventListener("load", () => {
                               <div class="footer-line"></div>
                           </div>
                           <div class="project__image">
-                              <img src="${project.coverImage}" alt="">
+                              <div class="project_img_hider"></div>
+                              <img class="project_img_tag" src="${project.coverImage}" alt="">
                           </div>
                       </div>
                   </div>
@@ -375,6 +376,9 @@ window.addEventListener("load", () => {
         const projectDescription = projectWrapper.querySelector(
           ".project-description"
         );
+        const projectImgHider =
+          projectWrapper.querySelector(".project_img_hider");
+        const projectImgTag = projectWrapper.querySelector(".project_img_tag");
 
         const tl = gsap.timeline({
           scrollTrigger: {
@@ -398,7 +402,13 @@ window.addEventListener("load", () => {
           .to(projectDescription, { opacity: 1 }, 0 + 0.1)
           .to(dividerLine, { scaleX: 1 }, 0 + 0.1)
           .to(projectCta, { y: 0, ease: "back.out(2)" }, 0 + 0.1)
-          .to(footerLine, { scaleX: 1 }, 0 + 0.3);
+          .to(footerLine, { scaleX: 1 }, 0 + 0.3)
+          .to(
+            projectImgHider,
+            { xPercent: 100, duration: 1.4, ease: "expos.out" },
+            0
+          )
+          .to(projectImgTag, { opacity: 1 });
       });
 
       // this.projectSection.append(projectListTags);
