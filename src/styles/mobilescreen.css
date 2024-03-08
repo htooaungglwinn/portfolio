@@ -72,6 +72,13 @@
     transform-origin: center center;
   }
 
+  .mouse_wrapper {
+    position: absolute;
+    bottom: 6rem;
+    width: 100%;
+    overflow: hidden;
+  }
+
   /* mouse mobile size */
   .mouse {
     opacity: 0.6;
