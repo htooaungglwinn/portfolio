@@ -63,7 +63,6 @@
   .intro__images img:nth-child(3) {
     top: 78vh;
     right: -10vw;
-    border: 1px solid red;
   }
 
   /* Initial Position */
