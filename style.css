@@ -19,6 +19,7 @@
   --color-grey-100: #bebebe;
   --color-grey-300: #aaaaaa;
   --color-grey-400: #676767;
+  --color-grey-800: #010004;
 
   /* Color - utalities */
   --color-violet-400: #7518cc;
@@ -29,7 +30,8 @@
   /* --- DESIGN TOKENS --- */
   /* --------------------- */
   /* BACKGROUNDS */
-  --bg-color-light: var(--color-grey-30);
+  --bg-color-light: var(--color-grey-20);
+  --bg-color-dark: var(--color-grey-800);
 
   /* Colors - Utalities */
   --color-highlight: var(--color-violet-400);
@@ -52,10 +54,12 @@
 
 body {
   overflow: auto;
-  color: var(--text-color-black);
-  background-color: var(--bg-color-white);
+  /* Light Mode */
   background-color: var(--bg-color-light);
   color: var(--text-color-dark);
+  /* Dark Mode  */
+  /* background-color: var(--bg-color-dark);
+  color: var(--text-color-light); */
   /* background-color: #f1f1f1;
   opacity: 0.8;
   background-image: radial-gradient(
@@ -195,8 +199,14 @@ html.lenis {
 }
 
 .container {
-  width: 84vw;
+  width: 80vw;
   margin: 0 auto;
+}
+
+.case_study_container {
+  width: 75vw;
+  margin: 0 auto;
+  border: 1px solid red;
 }
 
 .content_divider {
@@ -457,11 +467,14 @@ html.lenis {
 }
 
 .intro__sub-title p {
-  width: 32ch;
+  width: 28ch;
   font-size: 1.4rem;
   line-height: 130%;
   margin-left: auto;
   margin-top: 3rem;
+  margin-right: 2rem;
+  text-align: justify;
+  word-spacing: -1px;
 }
 
 /* images */
@@ -508,7 +521,7 @@ html.lenis {
 }
 
 .intro__images img:nth-child(3) {
-  top: 64vh;
+  top: 72vh;
   left: 70vw;
   /* transform-origin: center center; */
 }
@@ -712,9 +725,9 @@ html.lenis {
   width: 90vh;
   height: 100%;
   overflow: hidden;
-  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
   -webkit-box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
-  -moz-box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1); */
   overflow: hidden;
   /* background-color: transparent; */
 }
@@ -747,9 +760,9 @@ html.lenis {
   position: relative;
 }
 
-.footer {
+/* .footer {
   background-color: var(--footer-bg-color);
-}
+} */
 
 .footer__header {
   display: flex;

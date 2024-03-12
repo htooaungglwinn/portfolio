@@ -268,7 +268,6 @@ window.addEventListener("load", () => {
                               <div class="footer-line"></div>
                           </div>
                           <div class="project__image">
-                              <div class="project_img_hider"></div>
                               <img class="project_img_tag" src="${project.coverImage}" alt="">
                           </div>
                       </div>
@@ -302,7 +301,6 @@ window.addEventListener("load", () => {
       projectCTA.addEventListener("mouseover", () => {
         const projectCtaicon = projectCTA.querySelector(".project_cta_icon");
         const projectFiller = projectCTA.querySelector(".cta_fill");
-        const ctaText = projectCTA.querySelector(".cta_text");
         const tl = gsap.timeline({ ease: "expos.out" });
         tl.to(projectCTA, {
           duration: 0.08,
@@ -329,7 +327,6 @@ window.addEventListener("load", () => {
       projectCTA.addEventListener("mouseleave", () => {
         const projectCtaicon = projectCTA.querySelector(".project_cta_icon");
         const projectFiller = projectCTA.querySelector(".cta_fill");
-        const ctaText = projectCTA.querySelector(".cta_text");
         const tl = gsap.timeline({ ease: "expos.out" });
         tl.to(projectCTA, {
           duration: 0.03,
@@ -361,11 +358,11 @@ window.addEventListener("load", () => {
       projectWrapperTags.forEach((projectWrapper) => {
         const dividerLine = projectWrapper.querySelector(".divider-line");
         const footerLine = projectWrapper.querySelector(".footer-line");
-        const cta_wrapper = projectWrapper.querySelector(
-          ".project__cta-wrapper"
-        );
-        const projectCtaIcon =
-          projectWrapper.querySelector(".project_cta_icon");
+        // const cta_wrapper = projectWrapper.querySelector(
+        //   ".project__cta-wrapper"
+        // );
+        // const projectCtaIcon =
+        //   projectWrapper.querySelector(".project_cta_icon");
         const projectCta = projectWrapper.querySelector(".project__cta");
         const project_cta_line =
           projectWrapper.querySelector(".project_cta_line");
@@ -376,8 +373,8 @@ window.addEventListener("load", () => {
         const projectDescription = projectWrapper.querySelector(
           ".project-description"
         );
-        const projectImgHider =
-          projectWrapper.querySelector(".project_img_hider");
+        // const projectImgHider =
+        //   projectWrapper.querySelector(".project_img_hider");
         const projectImgTag = projectWrapper.querySelector(".project_img_tag");
 
         const tl = gsap.timeline({
@@ -396,6 +393,7 @@ window.addEventListener("load", () => {
         gsap.set(projectSubtitle, { opacity: 0 });
         gsap.set(projectDescription, { opacity: 0 });
         gsap.set(project_cta_line, { y: 100, opacity: 0 });
+        gsap.set(projectImgTag, { opacity: 0 });
 
         tl.to(projectHeader, { y: 0, ease: "back.out" })
           .to(projectSubtitle, { opacity: 1 }, 0 + 0.1)
@@ -404,11 +402,10 @@ window.addEventListener("load", () => {
           .to(projectCta, { y: 0, ease: "back.out(2)" }, 0 + 0.1)
           .to(footerLine, { scaleX: 1 }, 0 + 0.3)
           .to(
-            projectImgHider,
-            { xPercent: 100, duration: 1.4, ease: "expos.out" },
-            0
-          )
-          .to(projectImgTag, { opacity: 1 });
+            projectImgTag,
+            { opacity: 1, duration: 0.5, ease: "easeinout" },
+            0 + 0.08
+          );
       });
 
       // this.projectSection.append(projectListTags);

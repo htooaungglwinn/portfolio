@@ -41,14 +41,14 @@
   }
 
   .intro__images img:nth-child(2) {
-    top: 62vh;
+    top: 45vh;
     left: -3vw;
     /* transform-origin: center center; */
   }
 
   .intro__images img:nth-child(3) {
-    top: 68vh;
-    left: 72vw;
+    top: 74vh;
+    left: 74vw;
   }
 
   .intro__images.initial img {
@@ -64,7 +64,7 @@
 
   .mouse_wrapper {
     position: absolute;
-    bottom: 6rem;
+    bottom: 4.5rem;
     width: 100%;
     overflow: hidden;
   }
